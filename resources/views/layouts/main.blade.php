@@ -55,11 +55,11 @@
                 <div>
                     @if (LaravelLocalization::getCurrentLocale() == 'en')
                         <a href="{{ url('/') }}">
-                            <h4 class="logo-text">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه</h4>
+                            <h4 class="logo-text">ار دى للنقل و الخدمات البترولية</h4>
                         </a>
                     @else
                         <a href="{{ url('/') }}">
-                            <h4 class="logo-text">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه</h4>
+                            <h4 class="logo-text">ار دى للنقل و الخدمات البترولية</h4>
                         </a>
                     @endif
 
@@ -360,7 +360,7 @@
                 class='bx bxs-up-arrow-alt'></i></a>
         <!--End Back To Top Button-->
         <footer class="page-footer">
-            <p class="mb-0">Copyright © 2021. Developed By <a href="" target=".blank">الدولية تريدنج نبيل عبد الحليم جوهر وشركاه
+            <p class="mb-0">Copyright © 2021. Developed By <a href="" target=".blank">ار دى للنقل و الخدمات البترولية
                     </a></p>
         </footer>
     </div>
