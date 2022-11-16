@@ -203,7 +203,7 @@ class manageDoucumentController extends Controller
         // End Bank payment
 
         $trnsformed = json_encode($invoice, JSON_UNESCAPED_UNICODE);
-        $myFileToJson = fopen("C:\laragon\www\dawlia\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
+        $myFileToJson = fopen("C:\laragon\www\invenex\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
         fwrite($myFileToJson, $trnsformed);
         return redirect()->route('cer');
 
@@ -356,7 +356,7 @@ class manageDoucumentController extends Controller
         // End Bank payment
 
         $trnsformed = json_encode($invoice, JSON_UNESCAPED_UNICODE);
-        $myFileToJson = fopen("C:\laragon\www\dawlia\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
+        $myFileToJson = fopen("C:\laragon\www\invenex\EInvoicing\SourceDocumentJson.json", "w") or die("unable to open file");
         fwrite($myFileToJson, $trnsformed);
         return redirect()->route('cer');
 
@@ -367,11 +367,11 @@ class manageDoucumentController extends Controller
     public function openBat()
     {
 
-        shell_exec('C:\laragon\www\dawlia\EInvoicing/SubmitInvoices2.bat');
-        $path = "C:\laragon\www\dawlia\EInvoicing/FullSignedDocument.json";
-        $path2 = "C:\laragon\www\dawlia\EInvoicing/Cades.txt";
-        $path3 = "C:\laragon\www\dawlia\EInvoicing/CanonicalString.txt";
-        $path4 = "C:\laragon\www\dawlia\EInvoicing/SourceDocumentJson.json";
+        shell_exec('C:\laragon\www\invenex\EInvoicing/SubmitInvoices2.bat');
+        $path = "C:\laragon\www\invenex\EInvoicing/FullSignedDocument.json";
+        $path2 = "C:\laragon\www\invenex\EInvoicing/Cades.txt";
+        $path3 = "C:\laragon\www\invenex\EInvoicing/CanonicalString.txt";
+        $path4 = "C:\laragon\www\invenex\EInvoicing/SourceDocumentJson.json";
 
         $fullSignedFile = file_get_contents($path);
 
